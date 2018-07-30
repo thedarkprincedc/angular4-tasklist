@@ -1,0 +1,9 @@
+<div class="todoModify" *ngIf="isVisible">
+  <label for="name">Name: </label>
+  <input type="text" name="name" [(ngModel)]="f.name"/><br/>
+  <label>Id: </label>
+  <input type="text" name="id" [(ngModel)]="f.id"/><br/>
+  <label>Show: </label>
+  <input type="text" name="show" [(ngModel)]="f.bShow"/><br/>
+  <button (click)="onClickModify(f,$event)">Modify</button>
+</div>

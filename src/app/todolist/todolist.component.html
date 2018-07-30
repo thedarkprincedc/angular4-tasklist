@@ -1,0 +1,9 @@
+<ul>
+  <li *ngFor="let todo of todos">
+    {{todo.name}} - {{todo.bShow}} -
+      (
+        <a href="#" (click)="onClickDelete(todo, $event)">delete</a> /
+        <a href="#" (click)="onClickModify(todo, $event)">modify</a>
+      )
+  </li>
+</ul>
